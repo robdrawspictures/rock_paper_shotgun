@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+    color: blanchedalmond;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main{
+    text-align: center;
+}
+
+.choices{
+    width:400px;
+    margin: auto;
+}
+
+.title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 72px;
+}
+
+.subtitle{
+    font-family: cursive;
+    font-style: italic;
+}
+
+a {
+    color: mediumspringgreen;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:visited {
+    color: lightseagreen;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.navbtn{
+    background-color: seagreen;
+    font-family: monospace;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 32px;
+}
+
+.button {
+    border-radius: 5px;
+    border: 3px;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+
+#base-footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
