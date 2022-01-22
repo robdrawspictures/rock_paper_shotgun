@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+  {% block content %}
+    <head>
+        <title>Change Turn</title>
+    </head>
+    <body>
+        <h1>{{player1.name}} has made their choice.</h1><br>
+        <h1>Player 2, please enter your name and make your choice:</h1>
+        <form action="/result" method='post'>
+        <input type="text" name="name" id="name">
+        <select class="input" name='choice' placeholder="Choose Your Weapon">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <input type="Submit" value="Make Choice">
+        </form>
+    </body>
+    </html>
+  {% endblock %}

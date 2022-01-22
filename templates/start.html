@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+  {% block content %}
+    <title>RPS</title>
+</head>
+<body>
+    <h1>Welcome, Please Enter Your Name:</h1>
+    <form action="/stage2" method='post'>
+    <input type="text" name="name" id="name">
+    <select class="input" name='choice' placeholder="Choose Your Weapon">
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+    </select>
+    <input type="Submit" value="Make Choice">
+    </form>
+</body>
+</html>
+
+{% endblock %}

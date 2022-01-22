@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+  {% block content %}
+    <head>
+        <title>RPS</title>
+    </head>
+    <body>
+        <h1>Ready to take on the computer, eh?</h1>
+        <h1>Please Enter Your Name:</h1>
+        <form action="/comp_result" method='post'>
+        <input type="text" name="name" id="name">
+        <select class="input" name='choice' placeholder="Choose Your Weapon">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <input type="Submit" value="Make Choice">
+        </form>
+    </body>
+    </html>
+  {% endblock %}

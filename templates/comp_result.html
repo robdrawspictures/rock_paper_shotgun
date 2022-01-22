@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+  {% block content %}
+    <head>
+        <title>Results</title>
+    </head>
+    <body>
+        <h1>The Results Are In!</h1>
+        <p>{{player1.name}} chose {{player1.choice}}.</p><br>
+        <p>{{player2.name}} chose {{player2.choice}}.</p><br><br>
+        <h1>And The Winner Is...</h1>
+        <h2>{{outcome}}</h2>
+        <button class="replay"><a href="/play">Play Again?</a></button>
+    </body>
+    </html>
+  {% endblock %}
