@@ -5,12 +5,23 @@
         <title>Results</title>
     </head>
     <body>
-        <h1>The Results Are In!</h1>
-        <p>{{player1.name}} chose {{player1.choice}}.</p><br>
-        <p>{{player2.name}} chose {{player2.choice}}.</p><br><br>
-        <h1>And The Winner Is...</h1>
-        <h2>{{outcome}}</h2>
-        <button class="replay"><a href="/play">Play Again?</a></button>
+        <main>
+            <div class="border">
+                <img class="border-img" src="../static/img/border_left.png">
+            </div>
+              <section class="results">
+                <h1>The Results Are In!</h1>
+                <p>{{player1.name}} chose {{player1.choice}}.</p>
+                <p>{{player2.name}} chose {{player2.choice}}.</p>
+                <h1>And The Winner Is...</h1>
+                <p class="outcome">{{outcome}}</p>
+                <button class="button"><a href="/play">Play Again?</a></button>
+              </section>
+            <div class="border">
+                <img class="border-img" src="../static/img/border_right.png">
+            </div>
+        </main>
     </body>
+    <div class="audio"><audio src="/static/mus/smash_results.mp3" autoplay="true"></audio></div>
     </html>
   {% endblock %}

@@ -9,6 +9,10 @@ from rps import app
 def start():
     return render_template("start.html")
 
+@app.route("/rules")
+def rules():
+    return render_template("rules.html")
+
 @app.route("/stage2", methods=["POST"])
 def choice_1():
     name = request.form['name']

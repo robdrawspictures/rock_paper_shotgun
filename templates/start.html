@@ -4,27 +4,35 @@
 <head>
     <title>RPS</title>
 </head>
-<body>
-    <main>
-        <header class="title">ROCK PAPER SCISSORS</header>
-        <h1 class="subtitle">"God Bless The Guess"</h1>
-        <hr>
-        <h3>Please Enter Your Name And Make Your Choice:</h3>
-            <div class="choices">
-                <form action="/stage2" method='post'>
-                <input type="text" name="name" id="name">
-                <select class="input" name='choice' placeholder="Choose Your Weapon">
-                    <option value="rock">Rock</option>
-                    <option value="paper">Paper</option>
-                    <option value="scissors">Scissors</option>
-                </select>
-                <input class="button" type="Submit" value="Make Choice">
-                </form>
+<body> 
+    <header class="title">ROCK PAPER SCISSORS</header>
+    <h1 class="subtitle">"God Bless The Guess"</h1>
+    <hr>
+        <main>
+            <div class="border">
+                <img class="border-img" src="../static/img/border_left.png">
             </div>
-    </main>
-    <footer>
-    
-    </footer>
+                <section class="player-choice">
+                    <h3>Please Enter Your Name And Make Your Choice:</h3>
+                        <div class="choices">
+                            <form action="/stage2" method='post'>
+                            <input type="text" name="name" id="name" placeholder="Danny Dyer">
+                            <br>
+                            <select class="input" name='choice' placeholder="Choose Your Weapon">
+                                <option value="rock">Rock</option>
+                                <option value="paper">Paper</option>
+                                <option value="scissors">Scissors</option>
+                            </select>
+                            <br>
+                            <input class="button" type="Submit" value="Make Choice">
+                            </form>
+                        </div>
+                </section>
+            <div class="border">
+                <img class="border-img" src="../static/img/border_right.png">
+            </div>
+        </main>
+    <div class="audio"><audio src="/static/mus/smash_p1.mp3" autoplay="true"></audio></div>
 </body>
 </html>
 

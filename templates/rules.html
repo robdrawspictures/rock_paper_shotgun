@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+  {% block content %}
+    <head>
+        <title>Rules</title>
+    </head>
+        <body>
+            <header class="title">How To Play</header>
+                <main>
+                    <div class="border">
+                        <img class="border-img" src="../static/img/border_left.png">
+                    </div>
+                        <ul class="rules">
+                            <li>Rock beats Scissors</li>
+                            <li>Paper beats Rock*</li>
+                            <li>Scissors beat Paper</li>
+                            <li>Same choice is a Draw</li>
+                            <li>Show no mercy.</li>
+                        </ul>
+                    <div class="border">
+                        <img class="border-img" src="../static/img/border_right.png">
+                    </div>
+                </main>
+            <footer class="note">(*never understood this one, personally.)</footer>          
+        </body>
+        <div class="audio"><audio src="/static/mus/smash_training.mp3" autoplay="true"></audio></div>
+    </html>
+
+  {% endblock %}
