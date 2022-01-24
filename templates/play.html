@@ -5,17 +5,32 @@
         <title>RPS</title>
     </head>
     <body>
-        <h1>Ready to take on the computer, eh?</h1>
-        <h1>Please Enter Your Name:</h1>
-        <form action="/comp_result" method='post'>
-        <input type="text" name="name" id="name">
-        <select class="input" name='choice' placeholder="Choose Your Weapon">
-            <option value="rock">Rock</option>
-            <option value="paper">Paper</option>
-            <option value="scissors">Scissors</option>
-        </select>
-        <input type="Submit" value="Make Choice">
-        </form>
+      <header class="title">ROCK PAPER SCISSORS</header>
+      <h1 class="subtitle">"God Bless The Guess"</h1>
+      <hr>
+      <main>
+        <div class="border">
+                <img class="border-img" src="../static/img/border_left.png">
+        </div>
+          <section class="info">
+            <h1>Ready to take on the computer, eh?</h1>
+            <h3>Please Enter Your Name:</h3>
+            <form action="/comp_result" method='post'>
+            <input type="text" name="name" id="name">
+            <br>
+            <select class="input" name='choice' placeholder="Choose Your Weapon">
+                <option value="rock">Rock</option>
+                <option value="paper">Paper</option>
+                <option value="scissors">Scissors</option>
+            </select>
+            <br>
+            <input class="button" type="Submit" value="Make Choice">
+            </form>
+          </section>
+        <div class="border">
+                <img class="border-img" src="../static/img/border_right.png">
+        </div>
+      </main>
     </body>
     <div class="audio"><audio src="/static/mus/smash_comp.mp3" autoplay="true"></audio></div>
     </html>

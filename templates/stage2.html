@@ -5,17 +5,34 @@
         <title>Change Turn</title>
     </head>
     <body>
-        <h1>{{player1.name}} has made their choice.</h1><br>
-        <h1>Player 2, please enter your name and make your choice:</h1>
-        <form action="/result" method='post'>
-        <input type="text" name="name" id="name">
-        <select class="input" name='choice' placeholder="Choose Your Weapon">
-            <option value="rock">Rock</option>
-            <option value="paper">Paper</option>
-            <option value="scissors">Scissors</option>
-        </select>
-        <input type="Submit" value="Make Choice">
-        </form>
+      <header class="title">ROCK PAPER SCISSORS</header>
+      <h1 class="subtitle">"God Bless The Guess"</h1>
+      <hr>
+      <main>
+        <div class="border">
+          <img class="border-img" src="../static/img/border_left.png">
+        </div>
+          <section class="info">
+            <h1>{{player1.name}} has made their choice.</h1>
+            <h3>Player 2, please enter your name and make your choice:</h3>
+            <div class="choices">
+              <form action="/result" method='post'>
+              <input type="text" name="name" id="name">
+              <br>
+              <select class="input" name='choice' placeholder="Choose Your Weapon">
+                  <option value="rock">Rock</option>
+                  <option value="paper">Paper</option>
+                  <option value="scissors">Scissors</option>
+              </select>
+              <br>
+              <input class="button" type="Submit" value="Seal Fate">
+              </form>
+            </div>
+          </section>
+        <div class="border">
+          <img class="border-img" src="../static/img/border_right.png">
+        </div>
+      </main>
     </body>
     <div class="audio"><audio src="/static/mus/smash_p2.mp3" autoplay="true"></audio></div>
     </html>
